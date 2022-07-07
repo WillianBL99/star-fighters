@@ -1,11 +1,6 @@
-import Express, { json } from "express";
-import cors from "cors";
+import app from "./app.js";
 import chalk from "chalk";
 import "./setup.js";
-
-const app = Express();
-app.use( cors() );
-app.use( json() );
 
 const port = process.env.PORT || 5000;
 
